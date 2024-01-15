@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class Oscillator : MonoBehaviour
 {
+    [Tooltip("Oscillating movement")]
+    [SerializeField]
     float movement = 2f; // movement of the oscillator
+
+    [Tooltip("Oscillating Speed")]
+    [SerializeField]
     float speed = 1f;   // speed of oscillator
 
     Vector3 startingSpot; // mark the object position

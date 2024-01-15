@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.EditorTools;
 using UnityEngine;
 
 public class Rotate : MonoBehaviour
 {
+    [Tooltip("Spinning Speed")]
+    [SerializeField]
     float speed = 100;
 
     // Update is called once per frame

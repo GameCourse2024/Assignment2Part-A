@@ -1,15 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.EditorTools;
 using UnityEngine;
 
 public class Pulse : MonoBehaviour
 {
     // adjusting the sizes
-    float minSize = 0.5f; 
+    [Tooltip("Minimum Size")]
+    [SerializeField]
+    float minSize = 0.5f;
+
+    [Tooltip("Maximum Size")]
+    [SerializeField] 
     float maxSize = 1.5f;
     
     // speed of the pulse
+    [Tooltip("Pulse Speed")]
+    [SerializeField]
     float speed = 0.76f;
+
+    void Start() 
+    {
+            
+    }
 
     // Update is called once per frame
     void Update()

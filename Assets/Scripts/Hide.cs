@@ -1,9 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.EditorTools;
 using UnityEngine;
 
 public class Hide : MonoBehaviour
 {
+
+    [Tooltip("Choose key to hide/show component")]
+    [SerializeField]
+    private KeyCode myKey = KeyCode.Space;
     // component that works on the renderer 
     Renderer showComponent; 
     
@@ -22,7 +27,7 @@ public class Hide : MonoBehaviour
     void Update()
     {
         // if key is being pressed
-        if(Input.GetKeyDown(KeyCode.LeftArrow))
+        if(Input.GetKeyDown(myKey))
         {
             // indicate the flag
             isOn = !isOn;
