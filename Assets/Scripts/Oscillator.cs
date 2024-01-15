@@ -25,7 +25,7 @@ public class Oscillator : MonoBehaviour
     void Update()
     {
         // oscillate using sinus 
-        float oscillate = Mathf.Sin(Time.time * speed) * movement;
+        float oscillate = Mathf.Cos(Time.time * speed) * movement;
         
         // modify the object location by the oscillation on X axis
         transform.position = startingSpot + new Vector3(oscillate, 0, 0);
