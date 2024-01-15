@@ -1,2 +1,2 @@
 # Assignment2
-Play this game here: https://github.com/GameCourse2024/Assignment2
+Play this game HERE: https://github.com/GameCourse2024/Assignment2
